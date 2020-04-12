@@ -5,6 +5,7 @@ import {MainActor} from "../actors/MainActor";
 import {BubbleEntity} from "../entity/BubbleEntity";
 import {FireEntity} from "../entity/FireEntity";
 import {ScenarioScene} from "./ScenarioScene";
+import {Rectangle} from "../utils/Rectangle";
 
 export class ArenaScenarioScene extends Scene {
 
@@ -26,6 +27,7 @@ export class ArenaScenarioScene extends Scene {
 
         this._mob.pos = new Vector(996, 282)
     }
+
 
     onInitialize(_engine: Engine): void {
         super.onInitialize(_engine)
@@ -61,26 +63,27 @@ export class ArenaScenarioScene extends Scene {
         }
 
         if (this._mob.pos.x > this._main.pos.x) {
-            this._mob.pos.x -= 4
+            this._mob.pos.x -= 5
         }
         if (this._mob.pos.x < this._main.pos.x) {
-            this._mob.pos.x += 4
+            this._mob.pos.x += 5
         }
         if (this._mob.pos.y > this._main.pos.y) {
-            this._mob.pos.y -= 4
+            this._mob.pos.y -= 5
         }
         if (this._mob.pos.y < this._main.pos.y) {
-            this._mob.pos.y += 4
+            this._mob.pos.y += 5
         }
 
-        if (this._mob.pos.x === this._main.pos.x) {
-            if (this._mob.pos.y === this._main.pos.y) {
-                this._main._life -= 1
-                this._main.pos = new Vector(242, 282)
-                this._mob.pos = new Vector(996, 282)
-                this._hearts.pop()
-                this.remove(this._hearts[0])
-            }
+        const hitboxMob = new Rectangle(this._mob.pos.x, this._mob.y, 64, 64)
+        const hitboxMain = new Rectangle(this._main.pos.x, this._main.y, 44, 64)
+
+        if (hitboxMain.onIntersect(hitboxMob)) {
+            this._main._life -= 1
+            this._main.pos = new Vector(242, 282)
+            this._mob.pos = new Vector(996, 282)
+            this._hearts.pop()
+            this.remove(this._hearts[0])
         }
 
     }

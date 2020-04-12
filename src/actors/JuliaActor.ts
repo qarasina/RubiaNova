@@ -5,7 +5,7 @@ export class JuliaActor extends Actor {
 
     private _inverseAxe = false
     private _startTime = performance.now()
-    private _speed = 2
+    private _speed = 3
 
     constructor(x: number, y: number) {
         super({
