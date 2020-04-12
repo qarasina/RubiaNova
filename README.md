@@ -1,20 +1,10 @@
-# Excalibur TypeScript & Webpack Example
+﻿﻿# Présentation
 
-This is a bare bones excalibur example in typescript & webpack
+RubiaNova est un jeu vidéo de type MMORPG qui se déroule dans la ville de Rubia Nova qui se situe en Angleterre .
+Téléportation, Laser, Voiture volante, TGV Nitro, quoi de plus normal ?
 
-Other larger samples:
-* [Platformer](https://github.com/excaliburjs/sample-platformer)
-* [Shootem Up](https://github.com/excaliburjs/sample-shootemup)
+Suite à une bataille céleste, un démon faisant tremblaient les dieux fût réincarné en humain.
+Tout changea depuis ce jour.
 
-## Running locally
-
-* Using [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
-* Run the `npm install` to install dependencies
-* Run the `npm run dev` to run the development server to test out changes
-   * [Webpack](https://webpack.js.org/) will build the [typescript](https://www.typescriptlang.org/) into javascript
-   * [Webpack dev server](https://webpack.js.org/configuration/dev-server/) will host the script in a little server on http://localhost:8082/
-
-## Building bundles
-
-* Run `npm run build:dev` to produce javascript bundles for debugging in the `dist/` folder
-* Run `npm run build:prod` to produce javascript bundles for production (minified) in the `dist/` folder
+[Site en ligne]("http://rubianova.virtualhosting.fr")
+[Windows Build]("http://rubianova.virtualhosting.fr/Windows.zip")
