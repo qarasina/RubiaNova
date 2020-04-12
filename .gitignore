@@ -3,7 +3,7 @@ bundle.js
 index.js
 
 .github
-./src/assets/
+src/assets/
 
 # Logs
 logs
