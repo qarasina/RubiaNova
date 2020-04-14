@@ -1,50 +1,50 @@
 import * as ex from 'excalibur';
 
 // Scenario
-const backgroundScenario = require('./assets/images/scenario.png')
-const backgroundScenarioSong = require("./assets/songs/scenariohist.mp3")
+const backgroundScenario = require('./assets/images/scenario.png');
+const backgroundScenarioSong = require("./assets/songs/scenariohist.mp3");
 
 // Scenario Hospital
-const backgroundHospital = require("./assets/images/hospital.png")
-const doctorRight = require("./assets/images/doctor.png")
-const doctorLeft = require("./assets/images/doctorleft.png")
-const fatherRigh = require("./assets/images/father.png")
-const fatherLeft = require("./assets/images/fatherleft.png")
-const mother = require("./assets/images/mother.png")
-const mainFace = require("./assets/images/mainface.png")
-const main = require("./assets/images/main.png")
-const mainRight = require("./assets/images/mainright.png")
-const mainLeft = require("./assets/images/mainleft.png")
-const firstBubblesHospital = require("./assets/images/firstBubblesHospital.png")
-const secondBubblesHospital = require("./assets/images/secondBubblesHospital.png")
-const threeBubblesHospital = require("./assets/images/threeBubblesHospital.png")
-const fourBubblesHospital = require("./assets/images/fourBubblesHospital.png")
-const fiveBubblesHospital = require("./assets/images/fiveBubblesHospital.png")
-const backgroundHospitalSong = require("./assets/songs/backgroundHospitalSong.mp3")
+const backgroundHospital = require("./assets/images/hospital.png");
+const doctorRight = require("./assets/images/doctor.png");
+const doctorLeft = require("./assets/images/doctorleft.png");
+const fatherRigh = require("./assets/images/father.png");
+const fatherLeft = require("./assets/images/fatherleft.png");
+const mother = require("./assets/images/mother.png");
+const mainFace = require("./assets/images/mainface.png");
+const main = require("./assets/images/main.png");
+const mainRight = require("./assets/images/mainright.png");
+const mainLeft = require("./assets/images/mainleft.png");
+const firstBubblesHospital = require("./assets/images/firstBubblesHospital.png");
+const secondBubblesHospital = require("./assets/images/secondBubblesHospital.png");
+const threeBubblesHospital = require("./assets/images/threeBubblesHospital.png");
+const fourBubblesHospital = require("./assets/images/fourBubblesHospital.png");
+const fiveBubblesHospital = require("./assets/images/fiveBubblesHospital.png");
+const backgroundHospitalSong = require("./assets/songs/backgroundHospitalSong.mp3");
 
 // Scenario Home
-const backgroundHome = require("./assets/images/home.png")
-const julia = require('./assets/images/julia.png')
-const juliaFace = require("./assets/images/juliaface.png")
-const juliaRight = require("./assets/images/juliaright.png")
-const juliaLeft = require("./assets/images/julialeft.png")
-const firstBubbleHome = require("./assets/images/firstBubbleHome.png")
-const secondBubbleHome = require("./assets/images/secondBubbleHome.png")
-const threeBubbleHome = require("./assets/images/threeBubbleHome.png")
-const fourBubbleHome = require("./assets/images/fourBubbleHome.png")
-const fiveBubbleHome = require("./assets/images/fiveBubbleHome.png")
-const backgroundHomeSong = require("./assets/songs/home.mp3")
+const backgroundHome = require("./assets/images/home.png");
+const julia = require('./assets/images/julia.png');
+const juliaFace = require("./assets/images/juliaface.png");
+const juliaRight = require("./assets/images/juliaright.png");
+const juliaLeft = require("./assets/images/julialeft.png");
+const firstBubbleHome = require("./assets/images/firstBubbleHome.png");
+const secondBubbleHome = require("./assets/images/secondBubbleHome.png");
+const threeBubbleHome = require("./assets/images/threeBubbleHome.png");
+const fourBubbleHome = require("./assets/images/fourBubbleHome.png");
+const fiveBubbleHome = require("./assets/images/fiveBubbleHome.png");
+const backgroundHomeSong = require("./assets/songs/home.mp3");
 
 // Scenario Santa Nova
-const backgroundSantaNova = require("./assets/images/santanova.png")
-const juliaAdvert = require("./assets/images/juliaadvert.png")
+const backgroundSantaNova = require("./assets/images/santanova.png");
+const juliaAdvert = require("./assets/images/juliaadvert.png");
 
 // First Arena
-const backgroundArenaOne = require("./assets/images/arenaone.png")
-const firstMob = require("./assets/images/mob.png")
-const heart = require("./assets/images/heart.png")
-const fire = require("./assets/images/fire.png")
-const advertBubble = require("./assets/images/advertBubble.png")
+const backgroundArenaOne = require("./assets/images/arenaone.png");
+const firstMob = require("./assets/images/mob.png");
+const heart = require("./assets/images/heart.png");
+const fire = require("./assets/images/fire.png");
+const advertBubble = require("./assets/images/advertBubble.png");
 
 let Resources = {
     BackgroundScenario: new ex.Texture(backgroundScenario),
@@ -83,6 +83,6 @@ let Resources = {
     Heart: new ex.Texture(heart),
     Fire: new ex.Texture(fire),
     AdvertBubble: new ex.Texture(advertBubble)
-}
+};
 
-export { Resources }
+export { Resources };
