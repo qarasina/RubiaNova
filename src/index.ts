@@ -4,7 +4,7 @@ import { ScenarioScene } from './scenes/ScenarioScene';
 
 export class Game extends ex.Engine {
   constructor() {
-    super({ width: 1280, height: 720, displayMode: ex.DisplayMode.FullScreen });
+    super({ width: 1280, height: 720, displayMode: ex.DisplayMode.Fixed });
   }
 
   public start(loader: ex.Loader) {

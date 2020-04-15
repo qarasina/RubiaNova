@@ -5,7 +5,8 @@ import {MainActor} from "../actors/MainActor";
 import {BubbleEntity} from "../entity/BubbleEntity";
 import {FireEntity} from "../entity/FireEntity";
 import {Rectangle} from "../utils/Rectangle";
-import {ScenarioHomeScene} from "./ScenarioHomeScene";
+import {ScenarioHomeFinishScene} from "./ScenarioHomeFinishScene";
+import ex = require("excalibur");
 
 export class ArenaScenarioScene extends Scene {
 
@@ -46,6 +47,8 @@ export class ArenaScenarioScene extends Scene {
     update(engine: Engine, delta: number): void {
         super.update(engine, delta);
 
+        this._main._update(engine, delta);
+
         if (this._main._life === 1)  {
             this._main.pos = new Vector(242, 282);
             this._mob.pos = new Vector(996, 282);
@@ -56,9 +59,15 @@ export class ArenaScenarioScene extends Scene {
             this.add(this._fire);
             if (this._fire.pos.x > 1000) {
                 this._backgroundSong.stop();
-                engine.add("ScenarioHomeScene", new ScenarioHomeScene(engine));
-                engine.goToScene("ScenarioHomeScene");
+                engine.add("ScenarioHomeFinishScene", new ScenarioHomeFinishScene(engine));
+                engine.goToScene("ScenarioHomeFinishScene");
             }
+        }
+
+        if (engine.input.keyboard.isHeld(ex.Input.Keys.E)) {
+            this._backgroundSong.stop()
+            engine.add("ScenarioHomeFinishScene", new ScenarioHomeFinishScene(engine));
+            engine.goToScene("ScenarioHomeFinishScene");
         }
 
         if (this._mob.pos.x > this._main.pos.x) {
